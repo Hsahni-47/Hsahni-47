@@ -3,48 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Introduction & Contact</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harshit Sahni - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav id="navbar">
-        <h1>My Portfolio</h1>
-        <ul>
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Harshit Sahni</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+        <a href="#projects" class="btn">Explore My Work</a>
+    </header>
 
-    <!-- Introduction Section -->
-    <section id="intro">
-        <div class="container">
-            <h2 class="intro-heading">Welcome to My Portfolio</h2>
-            <p class="intro-text">Hi! I'm a passionate developer specializing in creating awesome web applications. This is my introduction page. Scroll down to get in touch!</p>
-            <button id="learn-more">Learn More</button>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Project One</h3>
+            </div>
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Project Two</h3>
+            </div>
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300" alt="Project 3">
+                <h3>Project Three</h3>
+            </div>
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300" alt="Project 4">
+                <h3>Project Four</h3>
+            </div>
         </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Harshit Sahni, a passionate web developer with experience in building responsive and dynamic websites. I love turning ideas into reality through clean code and beautiful designs. I specialize in HTML, CSS, JavaScript, and modern web technologies.
+        </p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="contact-container">
-            <h2 class="contact-heading">Get in Touch</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <h2>Contact Me</h2>
+        <p>If you would like to collaborate or just want to say hi, feel free to drop me a message below!</p>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit" id="submit-btn">Send Message</button>
-            </form>
-        </div>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Harshit Sahni. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
